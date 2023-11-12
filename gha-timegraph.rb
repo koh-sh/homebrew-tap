@@ -5,20 +5,20 @@
 class GhaTimegraph < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.0/gha-timegraph_Darwin_x86_64.tar.gz"
-      sha256 "32d6afbeb93209dcc1e0398ebda2d4f5d177d607c9348f86ad6129c2498980be"
+      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Darwin_x86_64.tar.gz"
+      sha256 "178041c1b6c80f45c1e5d78e5011187b63d227181b25bc3ad9a859e888c4042f"
 
       def install
         bin.install "gha-timegraph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.0/gha-timegraph_Darwin_arm64.tar.gz"
-      sha256 "c8f03abe2c8493c274bea3080f24ad4967bc9c41cf02e0949c85b9187cbdeccb"
+      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Darwin_arm64.tar.gz"
+      sha256 "875078f249163174e09afba90299bc8aaa49d671ae4b7ec621cbf2a65b29caa2"
 
       def install
         bin.install "gha-timegraph"
@@ -28,16 +28,16 @@ class GhaTimegraph < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.0/gha-timegraph_Linux_arm64.tar.gz"
-      sha256 "fdb4ab069f6ee31d9ae2b128d0ab2a91b0a151caee2d83281b905c871b53f7d5"
+      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Linux_arm64.tar.gz"
+      sha256 "70e0a7623d813323a4883b5eb4d618766183bc5a2ddfbdf0621d953005fad793"
 
       def install
         bin.install "gha-timegraph"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.0/gha-timegraph_Linux_x86_64.tar.gz"
-      sha256 "fff6a8ab44cebbcd66af16ca525aaab368490c34e0abd5fd2e72dcd43300cc73"
+      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Linux_x86_64.tar.gz"
+      sha256 "79599911885238bfc917eafaa2adc09a328a1a7454c2e9b3cf9e7fe4ae4f0fb4"
 
       def install
         bin.install "gha-timegraph"
