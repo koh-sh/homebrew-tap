@@ -5,20 +5,20 @@
 class GhaTimegraph < Formula
   desc ""
   homepage ""
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Darwin_x86_64.tar.gz"
-      sha256 "178041c1b6c80f45c1e5d78e5011187b63d227181b25bc3ad9a859e888c4042f"
+    on_intel do
+      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.2/gha-timegraph_Darwin_x86_64.tar.gz"
+      sha256 "47489c33cd0f226ff8372605a33944bdcfeb098c2b2ce85c975b464a0d3d8b40"
 
       def install
         bin.install "gha-timegraph"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Darwin_arm64.tar.gz"
-      sha256 "875078f249163174e09afba90299bc8aaa49d671ae4b7ec621cbf2a65b29caa2"
+    on_arm do
+      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.2/gha-timegraph_Darwin_arm64.tar.gz"
+      sha256 "f40c2047ea58f604ccfb8023dbd83e3199da119f3f2b478cffe68d61994ca49d"
 
       def install
         bin.install "gha-timegraph"
@@ -27,20 +27,24 @@ class GhaTimegraph < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Linux_arm64.tar.gz"
-      sha256 "70e0a7623d813323a4883b5eb4d618766183bc5a2ddfbdf0621d953005fad793"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.2/gha-timegraph_Linux_x86_64.tar.gz"
+        sha256 "0a4755a267481506507e018f9bcb17603fea2624bee7a66af6838254469a2c63"
 
-      def install
-        bin.install "gha-timegraph"
+        def install
+          bin.install "gha-timegraph"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.1/gha-timegraph_Linux_x86_64.tar.gz"
-      sha256 "79599911885238bfc917eafaa2adc09a328a1a7454c2e9b3cf9e7fe4ae4f0fb4"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/koh-sh/gha-timegraph/releases/download/v0.2.2/gha-timegraph_Linux_arm64.tar.gz"
+        sha256 "73a54655ddc81a5547b70b41826661fc700addec2a86231491958b066390fbf5"
 
-      def install
-        bin.install "gha-timegraph"
+        def install
+          bin.install "gha-timegraph"
+        end
       end
     end
   end
