@@ -5,20 +5,20 @@
 class CodebuildMultirunner < Formula
   desc ""
   homepage ""
-  version "0.7.5"
+  version "0.8.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.7.5/codebuild-multirunner_Darwin_x86_64.tar.gz"
-      sha256 "8186d5406eec74702f14ef242c60811a775c794817599270785edc5f48e79286"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.8.0/codebuild-multirunner_Darwin_x86_64.tar.gz"
+      sha256 "ca6feab77bfda514d0d78d65b7bc6d3ea2f09c2e163438d878e3acb7e1e7ac7d"
 
       def install
         bin.install "codebuild-multirunner"
       end
     end
     on_arm do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.7.5/codebuild-multirunner_Darwin_arm64.tar.gz"
-      sha256 "4680117fa63eb044e700c66f69ce36413434e9eeb036a4b2508c55c22d8596b2"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.8.0/codebuild-multirunner_Darwin_arm64.tar.gz"
+      sha256 "80d9f65b9a0a26273f525518d218be9c5473a8ba27ba46e7ec938f48e72cc91d"
 
       def install
         bin.install "codebuild-multirunner"
@@ -29,8 +29,8 @@ class CodebuildMultirunner < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.7.5/codebuild-multirunner_Linux_x86_64.tar.gz"
-        sha256 "e93db93c2614531556df9a1d873363fd33ea4a54161ceaa4b192fda2dc9bc49b"
+        url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.8.0/codebuild-multirunner_Linux_x86_64.tar.gz"
+        sha256 "82de1afb21c0b5f783e260044cacd9b9cdb347f68c4baf886118fc8d6fc7788b"
 
         def install
           bin.install "codebuild-multirunner"
@@ -39,8 +39,8 @@ class CodebuildMultirunner < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.7.5/codebuild-multirunner_Linux_arm64.tar.gz"
-        sha256 "3feb4bcc1e5a25e5b1afa7fe0eb56707d88d449e3e392f4994f2d2772bfccd01"
+        url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.8.0/codebuild-multirunner_Linux_arm64.tar.gz"
+        sha256 "f3e312f208f1cb94ead5d39d41307029a266a8b7da4be5c03d9ab97583a290ff"
 
         def install
           bin.install "codebuild-multirunner"
