@@ -2,7 +2,7 @@
 cask "codebuild-multirunner" do
   desc ""
   homepage ""
-  version "0.11.0"
+  version "0.11.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,29 @@ cask "codebuild-multirunner" do
 
   on_macos do
     on_intel do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.0/codebuild-multirunner_Darwin_x86_64.tar.gz"
-      sha256 "0f33ef425396767d4ee36bf99ff894cb54dc19a9340354927375ff3aaeb79e97"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Darwin_x86_64.tar.gz"
+      sha256 "8a4455d00581062e3feded0554cc5bb8138525d3ab4278916f69687f7a31dfa9"
     end
     on_arm do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.0/codebuild-multirunner_Darwin_arm64.tar.gz"
-      sha256 "69b505739e130f82fe6d51934b88bb14819d085cded73b14c72a8aad58fcc517"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Darwin_arm64.tar.gz"
+      sha256 "0884f0bc876c7f4d7fde3391375420c875de435771c9ce38fb5c61f30ab470d9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.0/codebuild-multirunner_Linux_x86_64.tar.gz"
-      sha256 "dea9834e2290fd9e38bdc119f1a3e4a7beefddd99c844e2a1de45020bfa94c68"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Linux_x86_64.tar.gz"
+      sha256 "682d05589f524fa4b37ecdcd5be507d92301aefb5b6102f581f4b8ea316d06a4"
     end
     on_arm do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.0/codebuild-multirunner_Linux_arm64.tar.gz"
-      sha256 "857b63181e4b6f5923db1ae40aab8546cf3b2e082c23cac72132a78fd100c572"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Linux_arm64.tar.gz"
+      sha256 "cdd93f1b1997415e1cdfe8c1c99d9733b39182a3ee707653576decf79f029e33"
+    end
+  end
+
+  postflight do
+    if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/codebuild-multirunner"]
     end
   end
 
