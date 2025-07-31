@@ -2,7 +2,7 @@
 cask "codebuild-multirunner" do
   desc ""
   homepage ""
-  version "0.11.1"
+  version "0.11.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "codebuild-multirunner" do
 
   on_macos do
     on_intel do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Darwin_x86_64.tar.gz"
-      sha256 "8a4455d00581062e3feded0554cc5bb8138525d3ab4278916f69687f7a31dfa9"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.2/codebuild-multirunner_Darwin_x86_64.tar.gz"
+      sha256 "f20bd201ea0fac9b47715eefdb0e83858070f321a6a5cad56d2371346a9cafcd"
     end
     on_arm do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Darwin_arm64.tar.gz"
-      sha256 "0884f0bc876c7f4d7fde3391375420c875de435771c9ce38fb5c61f30ab470d9"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.2/codebuild-multirunner_Darwin_arm64.tar.gz"
+      sha256 "b3a5c96bf5e82e7cab02df7e0b49978c95500e314f4a5f568e60bf73fe3791b8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Linux_x86_64.tar.gz"
-      sha256 "682d05589f524fa4b37ecdcd5be507d92301aefb5b6102f581f4b8ea316d06a4"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.2/codebuild-multirunner_Linux_x86_64.tar.gz"
+      sha256 "fe0ec7c0b659156fa2bd26e135eff2d7bdf64bf8b7371a60aa32d25a0451c752"
     end
     on_arm do
-      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.1/codebuild-multirunner_Linux_arm64.tar.gz"
-      sha256 "cdd93f1b1997415e1cdfe8c1c99d9733b39182a3ee707653576decf79f029e33"
+      url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v0.11.2/codebuild-multirunner_Linux_arm64.tar.gz"
+      sha256 "0359cff06e1df1cf837244762df6ab4e70b9ab702f0eca70dc337a84b38e14d9"
     end
   end
 
