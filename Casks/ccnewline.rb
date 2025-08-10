@@ -2,7 +2,7 @@
 cask "ccnewline" do
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "ccnewline" do
 
   on_macos do
     on_intel do
-      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.1/ccnewline_Darwin_x86_64.tar.gz"
-      sha256 "3f46dcf787cf47b48885cea94fce8f21a817937a125d2adac6fd162c6f292699"
+      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.2/ccnewline_Darwin_x86_64.tar.gz"
+      sha256 "5fd6a39dd669f5012389588fde141587ca1dd6452f3edeb35cb92413cef31147"
     end
     on_arm do
-      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.1/ccnewline_Darwin_arm64.tar.gz"
-      sha256 "ac175ad201a4ab41e5948ab2188f3bb9c9d00cdfc35ac923e6ea2fd293d6e1e8"
+      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.2/ccnewline_Darwin_arm64.tar.gz"
+      sha256 "b49a8286cac9d05fe7089a186737f3bd97e4745644ecd5a998e6a2b1335378ce"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.1/ccnewline_Linux_x86_64.tar.gz"
-      sha256 "01ba1522dd186448b69008fa43b9bf6cd52de56a7c18b4ec34db5925385a1950"
+      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.2/ccnewline_Linux_x86_64.tar.gz"
+      sha256 "7f634fcf0e9b59ec78f5facd821b314e3dcf1599354061b5cc72bc95ae40fc21"
     end
     on_arm do
-      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.1/ccnewline_Linux_arm64.tar.gz"
-      sha256 "01b2f9443625cc34554b517d4b4c6c88e545ba0bdfae2c0814b84fa28a2ab95f"
+      url "https://github.com/koh-sh/ccnewline/releases/download/v0.0.2/ccnewline_Linux_arm64.tar.gz"
+      sha256 "2b794a11e6e1c8cc78fc4350efe249eb66ffda0a29720b560b81eccd90625564"
     end
   end
 
