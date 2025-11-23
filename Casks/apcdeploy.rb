@@ -3,7 +3,7 @@ cask "apcdeploy" do
   name "apcdeploy"
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "apcdeploy" do
   on_macos do
     on_intel do
       url "https://github.com/koh-sh/apcdeploy/releases/download/v#{version}/apcdeploy_Darwin_x86_64.tar.gz"
-      sha256 "e40ae97b5af88af75447422f0d80749eb3050c59014fcc7500fad841c8bd217d"
+      sha256 "61027be51914cce6456a906bf01faa76fa5c68cd36888f1eea1f535bb9dadede"
     end
     on_arm do
       url "https://github.com/koh-sh/apcdeploy/releases/download/v#{version}/apcdeploy_Darwin_arm64.tar.gz"
-      sha256 "c695655dd8d108902218d0ba54932c3668df6aa6e61dbbdbecbb53426441d138"
+      sha256 "f4006e3f715649793da9cee3c876ca22224f9c6328a5e22112f20d0e8cb5558f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/koh-sh/apcdeploy/releases/download/v#{version}/apcdeploy_Linux_x86_64.tar.gz"
-      sha256 "687055eebaf7d51e255e668356b0ddb1bba8e4c3fc90a20bb38c390ec7cb95d5"
+      sha256 "76d930a67f49bcb18332d07a9058c515b1d9c0264df8897d1c08fe420d011a06"
     end
     on_arm do
       url "https://github.com/koh-sh/apcdeploy/releases/download/v#{version}/apcdeploy_Linux_arm64.tar.gz"
-      sha256 "24d85a77e121e62ca398fbe0590bc892c57c57d37673ba01f20d61f81596a7d3"
+      sha256 "90e1f37f1560da385d7717e09626e4341f0e23e9f519bb66e3f000a651840e53"
     end
   end
 
