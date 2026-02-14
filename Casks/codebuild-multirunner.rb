@@ -3,7 +3,7 @@ cask "codebuild-multirunner" do
   name "codebuild-multirunner"
   desc ""
   homepage ""
-  version "0.13.0"
+  version "0.14.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "codebuild-multirunner" do
   on_macos do
     on_intel do
       url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v#{version}/codebuild-multirunner_Darwin_x86_64.tar.gz"
-      sha256 "d102a979e035ac2ab43f6b11beca95f9a0759b1e6dd1e30db8af6274bfd92a84"
+      sha256 "161ec649f2f9429b82a17df033493ff46bc12119e944d596b77fb8d23c6ee907"
     end
     on_arm do
       url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v#{version}/codebuild-multirunner_Darwin_arm64.tar.gz"
-      sha256 "4d68a6786829395ec15b6150906a59032fba3492908efa7a5d3797c5f894db32"
+      sha256 "110dca7e59bd2bc853b5eaf36c8b350f386a089b38e97554b3bbde7bc543b845"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v#{version}/codebuild-multirunner_Linux_x86_64.tar.gz"
-      sha256 "1115a23963d3711f82ce488637c041ac71e5e910442833b586424e1a7b4114ba"
+      sha256 "a38212ef5e30264d6407238c4636a7f71ca274bb0890b3185e2a7dea1412ef10"
     end
     on_arm do
       url "https://github.com/koh-sh/codebuild-multirunner/releases/download/v#{version}/codebuild-multirunner_Linux_arm64.tar.gz"
-      sha256 "286f801a391457d3dd259a3161eaf2e7fc6355aa3f8a7418b81118b02ae9d3c0"
+      sha256 "7d471f3155b01afc139f5b05caba34b3828846909ce97dfb92034670584d3abf"
     end
   end
 
